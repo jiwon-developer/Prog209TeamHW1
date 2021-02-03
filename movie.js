@@ -1,3 +1,3 @@
 function Test() {
-    alert("Ddd");
+    alert("Submit a review!");
 }
