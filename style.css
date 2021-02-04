@@ -2,30 +2,36 @@ body {
     font-family: Verdana, Arial, Helvetica, sans-serif;
 
 
-    width: 300px;
+    width: 600px;
     margin: 10px auto;
-    border: 10px solid rgb(175, 204, 243);
     padding: 1em;
     font-size: 13px;
     /* text-align: center; */
-    background-color: rgb(250, 253, 255);
+    background-color: rgb(204, 224, 238);
+}
+
+#table {
+    border: 20px solid rgb(175, 204, 243);
+    width: 400px;
+    margin: auto;
+
 }
 
 
-
-h1 {
-
+h1,
+p {
+    font-family: Brush Script MT, Brush Script Std, cursive;
     text-align: center;
 }
 
 form {
-    border: 1px solid grey;
-
+    background-color: rgb(250, 250, 250);
+    border: 10px solid rgb(175, 204, 243);
 }
 
 label {
     display: inline-block;
-    width: 70px;
+    width: 120px;
     text-align: right;
 }
 
@@ -54,7 +60,7 @@ button:active {
 
     width: 200px;
     margin: 10px;
-    margin-left: 50px;
+    margin-left: 25%;
     font-size: 13px;
     height: 25px;
     background-color: rgb(116, 181, 255);
@@ -75,7 +81,7 @@ button:active {
 }
 
 #list_div {
-    margin: 5px auto;
+
     min-height: 200px;
     background-color: rgb(224, 224, 224);
 
