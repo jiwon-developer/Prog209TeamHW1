@@ -13,32 +13,22 @@
 
 <body>
 
-    <h1>Welcome to J & M's Movie Review Site!</h1>
+    <h1>Welcome to J & M's </br> Movie Review Site!</h1>
 
     <p>Please submit a movie review here!</p>
 
     <form name="movierating" onSubmit="JavaScript:handleClick()">
-        <label for="moviename">Movie:</label> <br>
-        <input type="text" id="movie" name="movie" value=" "><br>
-        </br>
-
-        <label for="rating">Rating:</label><br>
+        <label for="movie">Movie:</label>
+        <input type="text" id="movie" name="movie" value=" ">
+        <label for="rating">Rating:</label>
         <input type="text" id="rating" name="rating" value=" ">
-        </br>
-
-
-        <button type="submit" form="movierating" value="Submit">Add Movie</button>
-
+        <button id="add"type="submit" form="movierating" value="Submit">Add Movie</button>
     </form>
 
-
-
-
-    <div>
-
-        <button type="button ">Show Movie</button>
-        <ul id="moviename"> </ul>
-        <ul id="rating "> </ul>
+    <div id="list_div">
+        <button id ="show"type="button">Show Movie</button>
+        <ul id="movie_list">
+        </ul>
 
     </div>
 
