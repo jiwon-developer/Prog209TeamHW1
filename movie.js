@@ -1,6 +1,6 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", function(event) {
-    document.getElementById("movierating").addEventListener("click", addMovie);
+    document.getElementById("JavaScript:handleClick()").addEventListener("click", addMovie);
 })
 
 
