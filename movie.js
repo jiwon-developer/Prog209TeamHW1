@@ -1,14 +1,13 @@
-function Test() {
-    alert("Submit a review!");
+class Movie {
+    constructor(name, rating) {
+        this.name = name;
+        this.rating = rating;
+    }
 }
 
+movie.prototype.toString = function movietoString() {
+    return "Movie title: " + this.name + "Movie Rating: " + this.rating
+};
 
-function Movie(title, year, prating) {
-    this.title = title;
-    this.year = year;
-    this.prating = prating;
-}
-
-function Rating(rating) {
-    this.rating = rating;
-}
+let movieName = document.getElementById("name");
+let movieRating = document.getElementById("rating");
