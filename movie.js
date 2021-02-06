@@ -1,4 +1,4 @@
-let Movie = function(title, rating) {
+let addMovie = function(title, rating) {
     this.title = title;
     this.rating = rating;
     this.isValid = function() {}
@@ -9,7 +9,7 @@ let Movie = function(title, rating) {
 
 
 
-function Movie() {
+function addMovie() {
 
     if (isNaN(rating) || x < 1 || x > 5) {
         text = "Input not valid. Please rate movie from 1 to 5.";
@@ -25,4 +25,4 @@ movie.prototype.toString = function movietoString() {
 let movie = document.getElementById("movie");
 let rating = document.getElementById("rating");
 
-console.log(Movie.toString());
+console.log(addMovie.toString());
