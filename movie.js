@@ -1,3 +1,10 @@
+"use strict";
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById("movierating").addEventListener("click", addMovie);
+})
+
+
+
 let addMovie = function(title, rating) {
     this.title = title;
     this.rating = rating;
