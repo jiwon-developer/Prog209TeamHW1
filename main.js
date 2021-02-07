@@ -13,7 +13,7 @@ let makeMovie = function() {
     if (movie.isValid()) {
         addMovie(movie);
     } else {
-        alert("Please provide a movie rating from 1 to 5")
+        alert("Please enter the movie title, and a movie rating from 1 to 5")
     }
 
 

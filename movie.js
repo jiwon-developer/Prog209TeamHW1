@@ -9,11 +9,11 @@ let Movie = function(title, rating) {
 Movie.prototype.isValid = function() {
 
     if (!this.title) {
-        console.log("Title ckck")
+        
         return false;
 
     } else if (isNaN(this.rating) || this.rating < 1 || this.rating > 5) {
-        console.log("rating ckck")
+        
         return false;
 
     } else {
