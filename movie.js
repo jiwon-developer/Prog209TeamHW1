@@ -23,5 +23,5 @@ Movie.prototype.isValid = function() {
 };
 
 Movie.prototype.toString = function() {
-    return this.title + "s rating:  " + this.rating;
+    return this.title + "'s rating:  " + this.rating;
 };

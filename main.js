@@ -1,10 +1,10 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener("DOMContentLoaded", function(event) {
     document.getElementById("add").addEventListener("click", makeMovie);
     document.getElementById("show").addEventListener("click", showInfo);
 })
 
-let makeMovie = function () {
+let makeMovie = function() {
     let title = document.getElementById("movie");
     let rating = document.getElementById("rating");
 
@@ -13,7 +13,7 @@ let makeMovie = function () {
     if (movie.isValid()) {
         addMovie(movie);
     } else {
-        alert("The data was no crrect and no movie data should be saved for that movie!")
+        alert("Please provide a movie rating from 1 to 5")
     }
 
 
