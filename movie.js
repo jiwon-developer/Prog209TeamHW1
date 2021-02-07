@@ -1,11 +1,4 @@
-"use strict";
-document.addEventListener("DOMContentLoaded", function(event) {
-    document.getElementById("JavaScript:handleClick()").addEventListener("click", addMovie);
-})
-
-
-
-let addMovie = function(title, rating) {
+/* let Movie = function(title, rating) {
     this.title = title;
     this.rating = rating;
     this.isValid = function() {}
@@ -32,4 +25,33 @@ movie.prototype.toString = function movietoString() {
 let movie = document.getElementById("movie");
 let rating = document.getElementById("rating");
 
-console.log(addMovie.toString());
+console.log(addMovie.toString()); */
+
+
+let Movie = function(title, rating) {
+
+    this.title = title;
+    this.rating = parseInt(rating);
+    this.isValid = function() {
+
+
+        if (!this.title) {
+            console.log("Title ckck")
+            return false;
+
+        } else if (isNaN(this.rating) || this.rating < 1 || this.rating > 5) {
+            console.log("rating ckck")
+            return false;
+
+        } else {
+            return true;
+        }
+
+    };
+
+    this.toString = function() {
+
+        return this.title + "s rating : " + this.rating;
+    };
+
+};
